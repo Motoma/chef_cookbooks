@@ -1,13 +1,13 @@
 bash 'checkout miner' do
   user 'motoma'
   cwd '/home/motoma'
-  code 'git clone https://github.com/miningpoolhub/nheqminer.git'
+  code 'rm -rf nheqminer && git clone https://github.com/miningpoolhub/nheqminer.git'
 end
 
 bash 'assemble kernel' do
   user 'motoma'
   cwd '/home/motoma/nheqminer/cpu_xenocat/Linux/asm'
-  code 'sh assemble.sh'
+  code './assemble.sh'
 end
 
 bash 'generate makefile' do
