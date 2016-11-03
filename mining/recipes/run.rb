@@ -6,8 +6,8 @@ end
 
 bash 'assemble kernel' do
   user 'motoma'
-  cwd '/home/motoma/nheqminer/cpu_xenocat/Linux/asm'
-  code './assemble.sh'
+  cwd '/home/motoma/nheqminer/cpu_xenoncat/Linux/asm'
+  code 'bash assemble.sh'
 end
 
 bash 'generate makefile' do
