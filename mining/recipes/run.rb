@@ -1,4 +1,4 @@
-bash 'deploy miner'
+bash 'deploy miner' do
   code <<-EOH
     pwd
     EOH
