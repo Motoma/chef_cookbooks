@@ -1,5 +1,5 @@
 git 'checkout nheqminer' do
-  repository 'https://github.com/miningpool/nheqminer.git'
+  repository 'git@github.com:miningpoolhub/nheqminer.git'
   action :checkout
   user 'motoma'
   destination '/home/motoma/nheqminer'
