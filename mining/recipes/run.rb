@@ -1,6 +1,5 @@
-git 'checkout nheqminer' do
-  repository 'git@github.com:miningpoolhub/nheqminer.git'
-  action :checkout
+bash 'checkout nheqminer' do
   user 'motoma'
-  destination '/home/motoma/nheqminer'
+  cwd '/home/motoma'
+  code 'git clone https://github.com/miningpoolhub/nheqminer.git'
 end
