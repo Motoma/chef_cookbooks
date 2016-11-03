@@ -25,5 +25,5 @@ end
 bash 'launch miner' do
   user 'motoma'
   cwd '/home/motoma/nheqminer/Linux_cmake/nheqminer_cpu'
-  code 'screen -md ./nheqminer_cpu -l us-east-1.zcash.miningpoolhub.com:20570 -u Motoma.`hostname` -p x -t 1'
+  code 'screen -md ./nheqminer_cpu -l us-east1.zcash.miningpoolhub.com:20570 -u Motoma.`hostname` -p x -t 4'
 end
